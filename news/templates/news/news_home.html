@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Виды вторсырья!!{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Справочник вторсырья</h1>
+        <p>:3</p>
+
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3> {{ el.title}}</h3>
+                <p> {{ el.anons}}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+
+
+
+{% endblock %}
